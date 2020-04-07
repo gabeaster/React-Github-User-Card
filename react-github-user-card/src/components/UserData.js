@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-// import UserCard from "./UserCard";
+import UserCard from "./UserCard";
 // import Followers from "./Followers";
 
 class UserData extends Component {
@@ -22,4 +22,15 @@ class UserData extends Component {
                 console.log("userData error", err);
             });
     }
+
+    render () {
+        console.log("state userData", this.state.userData);
+        return (
+            <div className="cardContainer">
+                <UserCard user={this.state.userData}/> 
+            </div>
+        );
+    }
 }
+
+export default UserData;
