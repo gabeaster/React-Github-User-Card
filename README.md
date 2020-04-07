@@ -12,26 +12,26 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal
-- [ ] Use CRA to create a new React app in this repository
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [DONE] Create a forked copy of this project.
+- [DONE] Add your team lead as collaborator on Github.
+- [DONE] Clone your OWN version of the repository in your terminal
+- [DONE] Use CRA to create a new React app in this repository
+- [DONE] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [DONE] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [DONE] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [DONE] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [DONE] Add your team lead as a reviewer on the pull-request
+- [DONE] Your team lead will count the project as complete by merging the branch back into master.
+- [DONE] Do your magic!
 
 ## Minimum Viable Product
 
-- [ ] Fetch data from the Github API for a Github user
-- [ ] Display the user data on the DOM
-- [ ] Use class components when you need to hold any state or use any lifecycle methods
+- [DONE] Fetch data from the Github API for a Github user
+- [DONE] Display the user data on the DOM
+- [DONE] Use class components when you need to hold any state or use any lifecycle methods
 
 ## Planning your App
 
@@ -68,6 +68,9 @@ When you have those completed, you're ready to start coding!
 ## STEP 5 - Project Retrospective
 
 Now that you have completed the MVP, I want you to think about the process it took you to get here. Is there anything you wish you had planned better? Anything you would do differently? Now take a minute think about how you would accomplish these same objectives with function components and hooks. You have experience with both formats now, so you can form opinions, but more importantly, you can back up those opinions. That's a really exciting level to be at! If you have time now, go ahead and move onto the stretch problems.
+
+I feel like I would have benefited from taking advantage of more planning time to design the app and how I really want it to look. I also feel like I would have benefited more from drawing out a tree/outline to see how my data/props should flow from one component down to the next. 
+
 
 ## Stretch Problems
 
