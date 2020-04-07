@@ -8,6 +8,7 @@ class UserData extends Component {
         super(props);
         this.state = {
             userData: "",
+            followers: ""
         };
     }
 
@@ -20,6 +21,16 @@ class UserData extends Component {
             })
             .catch(err => {
                 console.log("userData error", err);
+            });
+
+        axios
+            .get("https://api.github.com/users/gabeaster/followers", {})
+            .then (res => {
+                console.log("follower data", res.data);
+                this.setState({ followers: res.data });
+            })
+            .catch(err => {
+                console.log("followerData error", err);
             });
     }
 
