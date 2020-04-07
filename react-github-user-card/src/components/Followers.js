@@ -7,9 +7,10 @@ class Followers extends Component {
         return (
             <>
             <div className="userCard">
-            <h3 className="userName">{this.props.follower.name}</h3>
+            
             <img className="userImg" src={this.props.follower.avatar_url} alt="user's avatar image"/>
-            <h4 className="userLogin">{this.props.follower.login}</h4>
+            <h3 className="userName">{this.props.follower.login}</h3>
+
             </div>
             </>
         )

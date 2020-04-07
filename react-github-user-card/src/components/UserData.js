@@ -37,12 +37,15 @@ class UserData extends Component {
     render () {
         console.log("state userData", this.state.userData);
         return (
+            <>
+            <h1>Gabby and The Followers</h1>
             <div className="cardContainer">
                 <UserCard key={this.state.userData.id} user={this.state.userData}/> 
                 {this.state.followersData.map(follower => (
                     <Followers key={follower.id} follower={follower} />
                 ))}
             </div>
+            </>
         );
     }
 }

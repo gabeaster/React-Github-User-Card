@@ -8,9 +8,10 @@ constructor (props) {
 render() {
     return (
         <div className="userCard">
-            <h3 className="userName">{this.props.user.name}</h3>
+            
             <img className="userImg" src={this.props.user.avatar_url} alt="user's avatar image"/>
-            <h4 className="userLogin">{this.props.user.login}</h4>
+            <h3 className="userName">{this.props.user.login}</h3>
+           
             
         </div>
     )

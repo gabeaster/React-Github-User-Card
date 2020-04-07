@@ -6,7 +6,6 @@ function App() {
   
     return (
         <>
-        <h1>Gabby and Followers</h1>
         <div className="App">
           <UserData />
         </div>
