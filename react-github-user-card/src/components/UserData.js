@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import axios from "axios";
 import UserCard from "./UserCard";
-// import Followers from "./Followers";
+import Followers from "./Followers";
 
 class UserData extends Component {
     constructor (props) {
         super(props);
         this.state = {
             userData: "",
-            followers: ""
+            followersData: []
         };
     }
 
@@ -27,7 +27,7 @@ class UserData extends Component {
             .get("https://api.github.com/users/gabeaster/followers", {})
             .then (res => {
                 console.log("follower data", res.data);
-                this.setState({ followers: res.data });
+                this.setState({ followersData: res.data });
             })
             .catch(err => {
                 console.log("followerData error", err);
@@ -38,7 +38,10 @@ class UserData extends Component {
         console.log("state userData", this.state.userData);
         return (
             <div className="cardContainer">
-                <UserCard user={this.state.userData}/> 
+                <UserCard key={this.state.userData.id} user={this.state.userData}/> 
+                {this.state.followersData.map(follower => (
+                    <Followers key={follower.id} follower={follower} />
+                ))}
             </div>
         );
     }
